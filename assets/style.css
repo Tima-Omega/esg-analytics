@@ -93,6 +93,9 @@ body {
   -webkit-transition: .2s linear;
   transition: .2s linear;
   text-transform: uppercase;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .button:hover {
@@ -450,6 +453,10 @@ body {
   margin-bottom: 3.75rem;
 }
 
+.form__steps--mb {
+  margin-bottom: 1.875rem;
+}
+
 .form__step {
   font-weight: 700;
   font-size: 1.25rem;
@@ -458,6 +465,8 @@ body {
   text-transform: uppercase;
   color: #000;
   margin-right: 1.125rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .form__step-hint {
@@ -468,22 +477,126 @@ body {
   color: #000;
 }
 
-.form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2.5rem;
-  -webkit-column-gap: .75rem;
-          column-gap: .75rem;
+.form__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+}
+
+.form__inner--last {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "mail mail mail" "surname name patronymic" "phone phone ." "terms terms terms" "initiator initiator initiator" "text-first text-first text-first" "text-sec text-sec text-sec" "text-third text-third text-third";
 }
 
 .form__input {
-  width: 50%;
   margin-bottom: 0;
+  position: relative;
+}
+
+.form__input.correct {
+  background: rgba(34, 153, 123, 0.2);
+  color: #22997B;
+}
+
+.form__input:focus + label {
+  display: none;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__item--mail {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: mail;
+}
+
+.form__item--surname {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: surname;
+}
+
+.form__item--name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: name;
+}
+
+.form__item--patronymic {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: patronymic;
+}
+
+.form__item--phone {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: phone;
+}
+
+.form__item--terms {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: terms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__item--initiator {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: initiator;
+}
+
+.form__item--text-first {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: text-first;
+}
+
+.form__item--text-sec {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: text-sec;
+}
+
+.form__item--text-third {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: text-third;
+}
+
+.form__item label {
+  position: absolute;
+  font-family: 'PT Sans', sans-serif;
+  color: #FF0000;
+  font-size: 1.0625rem;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  top: -2px;
+  right: 2px;
 }
 
 .form__button {
-  width: 50%;
+  width: 100%;
+  max-width: inherit;
 }
 
 .form__hint {
@@ -493,5 +606,194 @@ body {
   line-height: 1.3;
   letter-spacing: 0.05em;
   font-style: italic;
+  margin-top: 2.5rem;
+}
+
+.form__hint span {
+  font-weight: 700;
+}
+
+.form__repeat {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.form__repeat-text {
+  color: #666666;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: .75rem;
+  line-height: 1.3;
+  margin-right: .375rem;
+}
+
+.form__repeat-link {
+  font-weight: 700;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #22997B;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.form__repeat-link:hover {
+  opacity: 0.6;
+}
+
+.form__note {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  color: #666666;
+  margin-bottom: .625rem;
+}
+
+.form__note span {
+  color: #FF0000;
+  font-weight: 700;
+}
+
+.form__checkbox {
+  height: 0;
+  visibility: hidden;
+  width: 0;
+}
+
+.form__checkbox:checked + label::after {
+  opacity: 1;
+}
+
+.form__label {
+  background: #C4C4C4;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  position: relative !important;
+  width: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.form__label::after {
+  background: #22997B;
+  content: "";
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  opacity: 0;
+}
+
+.form__term {
+  font-family: 'PT Sans', sans-serif;
+  color: #666666;
+  font-size: .75rem;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  margin-left: 1rem;
+}
+
+.form__term a {
+  color: #666666;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.form__term a:hover {
+  opacity: 0.6;
+}
+
+.form textarea {
+  resize: none;
+  width: 100%;
+  border: none;
+}
+
+.form textarea[name=first], .form textarea[name=sec] {
+  min-height: 104px;
+}
+
+.form textarea[name=third] {
+  min-height: 171px;
+}
+
+.form__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.form__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.form__box img {
+  margin-right: 1.25rem;
+}
+
+.form__box-text {
+  font-weight: 700;
+  font-size: .625rem;
+  color: #666666;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+.form__send {
+  min-width: 133px;
+}
+
+.form__wrap {
+  margin-left: 2.25rem;
+}
+
+.form__doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__doc img {
+  margin-right: .625rem;
+}
+
+.form__doc-link {
+  font-family: 'PT Sans', sans-serif;
+  color: #666666;
+  font-size: .625rem;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  margin-bottom: .25rem;
+}
+
+.form__delete {
+  width: 10px;
+  height: 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: url(./images/trash.svg) center/cover no-repeat;
+  margin-left: .5rem;
 }
 /*# sourceMappingURL=style.css.map */

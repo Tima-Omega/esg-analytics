@@ -1,0 +1,39 @@
+$main: #22997B;
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.header {
+	padding: 1.125rem 0;
+	background: $main;
+	font-family: 'PT Sans Caption', sans-serif;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__nav {
+		display: flex;
+		column-gap: 3rem;
+	}
+	&__link {
+		max-width: 220px;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		font-size: 0.875rem;
+		line-height: 1.125rem;
+		color: #ffffff;
+		text-decoration: none;
+		transition: .2s linear;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__search {
+		cursor: pointer;
+	}
+}

@@ -1419,4 +1419,132 @@ body {
   line-height: 1.3;
   letter-spacing: 0.04em;
 }
+
+.report__main-text {
+  padding-left: 6.25rem;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  margin-bottom: 3.5rem;
+}
+
+.report__item {
+  margin-bottom: 3.5rem;
+}
+
+.report__item:last-child {
+  margin-bottom: 0;
+}
+
+.report__name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2.25rem;
+}
+
+.report__box {
+  padding-left: 6.25rem;
+}
+
+.report__docs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .625rem;
+}
+
+.report__docs-arrow {
+  margin-right: 1rem;
+}
+
+.report__docs-name {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.report__docs-date {
+  font-size: .875rem;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  margin-left: auto;
+}
+
+.report__docs-date span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.report__link {
+  margin-left: 3.125rem;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.report__link:hover {
+  opacity: 0.6;
+}
+
+.report__link--ml {
+  margin-left: auto;
+}
+
+.report__link--sec {
+  margin-left: .375rem;
+}
+
+.report__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  margin-bottom: 3.125rem;
+}
+
+.report__cont:last-child {
+  margin-bottom: 0;
+}
+
+.report__date {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.report__inner-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #22997B;
+  margin-bottom: 1rem;
+}
+
+.report__inner-name--black {
+  color: #000000;
+}
+
+.report__text {
+  padding-right: 6.25rem;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+}
+
+.report__text span {
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */

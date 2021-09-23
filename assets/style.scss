@@ -162,6 +162,59 @@ body {
 		margin-top: 1.0625rem;
 		margin-bottom: .5rem;
 	}
+	&__groups {
+		margin-top: 6.25rem;
+		&-title {
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1.3;
+			letter-spacing: 0.07em;
+			text-transform: uppercase;
+			margin-bottom: .75rem;
+		}
+	}
+	&__group {
+		padding: .75rem 0.5rem;
+		border-top: 1px solid #DEDEDE;	
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		&-value {
+			font-family: 'PT Sans Narrow', sans-serif;
+			color: #666666;
+			font-weight: 700;
+			font-size: 2.625rem;
+			line-height: 1.3;
+			letter-spacing: 0.03em;
+			margin-right: .75rem;
+		}
+		&-name {
+			color: #666666;
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1.3;
+			letter-spacing: 0.03em;
+		}
+		&.active {
+			position: relative;
+			.aside__group-value {
+				color: $main;
+			}
+			.aside__group-name {
+				color: $main;
+			}
+			&::before {
+				position: absolute;
+				content: "";
+				left: -1.125rem;
+				width: 4px;
+				height: calc(100% - 1.5rem);
+				top: 50%;
+				transform: translateY(-50%);
+				background: $main;
+			}
+		}
+	}
 }
 
 .about {
@@ -920,5 +973,119 @@ body {
 	&__link {
 		align-items: center;
 		font-size: .75rem;
+	}
+}
+
+.breadcrumb {
+	list-style: none;
+	padding: 0;
+	margin: .75rem 0 1.875rem 0;
+	&__item {
+		display: inline;
+		+ li::before {
+			padding: 0 .25rem;
+			color: #666666;
+			content: "/\00a0";
+		}
+	}
+	&__link {
+		text-decoration: none;
+		font-family: 'PT Sans', sans-serif;
+		font-weight: 700;
+		font-size: .875rem;
+		letter-spacing: 0.04em;
+		color: #666666;
+		transition: .2s linear;
+		&.active {
+			text-decoration: underline;
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
+
+.optimization {
+	&__subtitle {
+		margin-bottom: 2rem;
+	}
+	&__item {
+		margin-bottom: 3.4375rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&-title {
+			margin-bottom: 2rem;
+			&--sec {
+				font-size: 1.125rem;
+				margin-bottom: 1.25rem;
+				color: #000000;
+				text-transform: none;
+			}
+		}
+	}
+	&__text {
+		padding: 0 6.25rem;
+		font-family: 'PT Sans', sans-serif;
+		font-size: 1rem;
+		line-height: 1.3;
+		letter-spacing: 0.04em;
+		a {
+			font-weight: 700;
+			color: $main;
+		}
+	}
+	&__docs {
+		display: flex;
+		align-items: center;
+		margin: 1.5rem 0 2.8125rem;
+		padding-left: 6.25rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&-arrow {
+			margin-right: 1rem;
+		}
+		&-name {
+			font-family: 'PT Sans', sans-serif;
+			font-size: 1rem;
+			line-height: 1.3;
+			letter-spacing: 0.04em;
+		}
+	}
+	&__link {
+		margin-left: auto;
+		transition: .2s linear;
+		&--sec {
+			margin-left: .3125rem;
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	&__groups {
+		padding: 0 6.25rem;
+	}
+	&__group {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.875rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&-num {
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1.3;
+			letter-spacing: 0.04em;
+			margin-right: .75rem;
+			flex-shrink: 0;
+		}
+		&-name {
+			font-family: 'PT Sans', sans-serif;
+			font-size: 1rem;
+			line-height: 1.3;
+			letter-spacing: 0.04em;
+		}
 	}
 }

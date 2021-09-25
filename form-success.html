@@ -13,18 +13,45 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="">
+				<a href="" class="header__logo">
 					<img src="./assets/images/logo.png" alt="">
 				</a>
 				<nav class="header__nav">
 					<a href="" class="header__link">О ФОРУМЕ</a>
-					<a href="" class="header__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
-						СООБЩЕСТВА</a>
+					<div class="header__list">
+						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВА ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
+						<div class="header__box">
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								Оптимизация регуляторнойнагрузки</a>
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								Развитие финансового рынка</a>
+						</div>
+					</div>
 					<a href="" class="header__link">АНАЛИТИКА ESG</a>
-					<a href="" class="header__link">МЕЖДУНАРОДНОЕ СОТРУДНИЧЕСТВО</a>
+					<a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
 				</nav>
 				<div class="header__search">
 					<img src="./assets/images/search.svg" alt="">
+				</div>
+				<div class="burger"></div>
+				<div class="burger__list">
+					<div class="burger__search">
+						<div class="burger__box">
+							<input type="text" class="burger__input" placeholder="Что ищем?">
+							<button class="burger__find">
+								<img src="./assets/images/find.svg" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="burger__nav">
+						<a href="" class="burger__link">О ФОРУМЕ</a>
+						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+							СООБЩЕСТВА</a>
+						<a href="" class="burger__link">АНАЛИТИКА ESG</a>
+						<a href="" class="burger__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -40,7 +67,7 @@
 						<a href="" class="aside__button button">ПОДАТЬ ИНИЦИАТИВУ</a>
 					</div>
 					<form action="" class="aside__form">
-						<div class="aside__title"></div>
+						<div class="aside__title">Подписаться на аналитику ESG</div>
 						<input type="text" class="aside__input" placeholder="Имя Фамилия">
 						<input type="text" class="aside__input" placeholder="Компания">
 						<input type="text" class="aside__input" placeholder="Адрес электронной почты">
@@ -87,7 +114,7 @@
 							
 						</div>
 						<div class="form__item form__item--terms">
-							<input type="checkbox" id="check1" class="form__checkbox">
+							<input type="checkbox" id="check1" class="form__checkbox" checked>
 							<label for="check1" class="form__label"></label>
 							<div class="form__term">Принимаю <a href="">Пользовательское соглашение</a> и согласен <br> с <a href="">Правилами использования и обработки персональных данных</a></div>
 						</div>
@@ -96,15 +123,15 @@
 							
 						</div>
 						<div class="form__item form__item--text-first">
-							<textarea name="first" class="aside__input form__input" placeholder="Ссылка на норму, требующую изменения, отмены / тематика инициативы"></textarea>
+							<textarea data-autoresize name="first" class="aside__input form__input form__textarea" placeholder="Ссылка на норму, требующую изменения, отмены / тематика инициативы"></textarea>
 							
 						</div>
 						<div class="form__item form__item--text-sec">
-							<textarea name="sec" class="aside__input form__input" placeholder="Суть устаревшей / избыточной нормы / конкретное предложение и альтернативные решения (при наличии"></textarea>
+							<textarea data-autoresize name="sec" class="aside__input form__input form__textarea" placeholder="Суть устаревшей / избыточной нормы / конкретное предложение и альтернативные решения (при наличии"></textarea>
 							
 						</div>
 						<div class="form__item form__item--text-third">
-							<textarea name="third" class="aside__input form__input" placeholder="Краткое обоснование для устранения устаревших / избыточных требований / описание требующей решения проблемы"></textarea>
+							<textarea data-autoresize name="third" class="aside__input form__input form__textarea" placeholder="Краткое обоснование для устранения устаревших / избыточных требований / описание требующей решения проблемы"></textarea>
 							
 						</div>
 					</form>
@@ -164,4 +191,6 @@
 		</div>
 	</footer>
 </body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
 </html>

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="./assets/style.css">
 	<title>Document</title>
 </head>
@@ -13,18 +14,45 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="">
+				<a href="" class="header__logo">
 					<img src="./assets/images/logo.png" alt="">
 				</a>
 				<nav class="header__nav">
 					<a href="" class="header__link">О ФОРУМЕ</a>
-					<a href="" class="header__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
-						СООБЩЕСТВА</a>
+					<div class="header__list">
+						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВА ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
+						<div class="header__box">
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								Оптимизация регуляторнойнагрузки</a>
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								Развитие финансового рынка</a>
+						</div>
+					</div>
 					<a href="" class="header__link">АНАЛИТИКА ESG</a>
-					<a href="" class="header__link">МЕЖДУНАРОДНОЕ СОТРУДНИЧЕСТВО</a>
+					<a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
 				</nav>
 				<div class="header__search">
 					<img src="./assets/images/search.svg" alt="">
+				</div>
+				<div class="burger"></div>
+				<div class="burger__list">
+					<div class="burger__search">
+						<div class="burger__box">
+							<input type="text" class="burger__input" placeholder="Что ищем?">
+							<button class="burger__find">
+								<img src="./assets/images/find.svg" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="burger__nav">
+						<a href="" class="burger__link">О ФОРУМЕ</a>
+						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+							СООБЩЕСТВА</a>
+						<a href="" class="burger__link">АНАЛИТИКА ESG</a>
+						<a href="" class="burger__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -40,7 +68,7 @@
 						<a href="" class="aside__button button">ПОДАТЬ ИНИЦИАТИВУ</a>
 					</div>
 					<form action="" class="aside__form">
-						<div class="aside__title"></div>
+						<div class="aside__title">Подписаться на аналитику ESG</div>
 						<input type="text" class="aside__input" placeholder="Имя Фамилия">
 						<input type="text" class="aside__input" placeholder="Компания">
 						<input type="text" class="aside__input" placeholder="Адрес электронной почты">
@@ -70,6 +98,18 @@
 						<a href="" class="about__tab">Команда</a>
 						<a href="" class="about__tab">Текущие <br> проекты</a>
 						<a href="" class="about__tab">Осуществленные <br> проекты</a>
+					</div>
+					<div class="choose">
+						<div class="choose__trigger">ВЫБРАТЬ ПОДРАЗДЕЛ
+							<div class="choose__arrow"></div>
+						</div>
+						<div class="choose__list">
+							<a href="" class="choose__link">Основная информация</a>
+							<a href="" class="choose__link">Органы управления</a>
+							<a href="" class="choose__link">Команда</a>
+							<a href="" class="choose__link">Текущие проекты</a>
+							<a href="" class="choose__link">Осуществленные проекты</a>
+						</div>
 					</div>
 					<div class="about__cont">
 						<div class="about__info">
@@ -141,7 +181,7 @@
 						</div>
 						<div class="about__projects">
 							<div class="about__title about__title--projects">Текущие проекты</div>
-							<div class="about__subtitle">РАБОТА С ИНИЦИАТИВАМИ ПРОФСООБЩЕСТВА <br> В СФЕРЕ РЕГУЛИРОВАНИЯ ФИНАНСОВОГО РЫНКА</div>
+							<div class="about__subtitle about__subtitle--mt">РАБОТА С ИНИЦИАТИВАМИ ПРОФСООБЩЕСТВА <br> В СФЕРЕ РЕГУЛИРОВАНИЯ ФИНАНСОВОГО РЫНКА</div>
 							<div class="about__text">
 								АЦ «Форум» принимает участие в деятельности Банка России по работе с инициативами профессионального сообщества в рамках двух треков: инициативы по развитию рынка и по оптимизации регуляторной нагрузки. Инициативы охватывают весь спектр вопросов регулирования и развития рынка, включая секторальные и кросс-секторальные аспекты. Согласованные Банком России и профсообществом инициативы по развитию рынка транспонируются в стратегические документы (Основные направления развития финансового рынка РФ), в то время как инициативы по оптимизации регуляторной нагрузки реализуются в рамках специально установленной Банком России процедуры.
 							</div>
@@ -227,4 +267,6 @@
 		</div>
 	</footer>
 </body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
 </html>

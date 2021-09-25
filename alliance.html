@@ -13,18 +13,45 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="">
+				<a href="" class="header__logo">
 					<img src="./assets/images/logo.png" alt="">
 				</a>
 				<nav class="header__nav">
 					<a href="" class="header__link">О ФОРУМЕ</a>
-					<a href="" class="header__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
-						СООБЩЕСТВА</a>
+					<div class="header__list">
+						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВА ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
+						<div class="header__box">
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								Оптимизация регуляторнойнагрузки</a>
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								Развитие финансового рынка</a>
+						</div>
+					</div>
 					<a href="" class="header__link">АНАЛИТИКА ESG</a>
-					<a href="" class="header__link">МЕЖДУНАРОДНОЕ СОТРУДНИЧЕСТВО</a>
+					<a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
 				</nav>
 				<div class="header__search">
 					<img src="./assets/images/search.svg" alt="">
+				</div>
+				<div class="burger"></div>
+				<div class="burger__list">
+					<div class="burger__search">
+						<div class="burger__box">
+							<input type="text" class="burger__input" placeholder="Что ищем?">
+							<button class="burger__find">
+								<img src="./assets/images/find.svg" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="burger__nav">
+						<a href="" class="burger__link">О ФОРУМЕ</a>
+						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+							СООБЩЕСТВА</a>
+						<a href="" class="burger__link">АНАЛИТИКА ESG</a>
+						<a href="" class="burger__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -40,7 +67,7 @@
 						<a href="" class="aside__button button">ПОДАТЬ ИНИЦИАТИВУ</a>
 					</div>
 					<form action="" class="aside__form">
-						<div class="aside__title"></div>
+						<div class="aside__title">Подписаться на аналитику ESG</div>
 						<input type="text" class="aside__input" placeholder="Имя Фамилия">
 						<input type="text" class="aside__input" placeholder="Компания">
 						<input type="text" class="aside__input" placeholder="Адрес электронной почты">
@@ -69,14 +96,14 @@
 					<div class="about__subtitle alliance__subtitle">/ World Alliance of International Financial Centers (WAIFC)</div>
 					<div class="alliance__inner">
 						<div class="alliance__item">
-							<div class="alliance__item-title">Аналитический центр «Форум» — один из инициаторов создания международной неправительственной организации «Всемирный альянс международных финансовых центров» (World Alliance of International Financial Centers, WAIFC).</div>
+							<div class="alliance__item-title">Аналитический центр «Форум» — один из инициаторов создания международной неправительст&shy;венной организации «Всемирный альянс международных финансовых центров» (World Alliance of International Financial Centers, WAIFC).</div>
 							<div class="alliance__cont">
 								<div class="alliance__text"><span>В декабре 2016 года</span> представители Москвы, Парижа и Франкфурта-на-Майне подписали в Москве Декларацию о намерении создать WAIFC. <br> <br>
 								<span>В июле 2018</span> года представители 11 финансовых центров подписали в Париже Декларацию о создании Альянса, и <span>в октябре 2018 года</span> Альянс был учрежден как международная некоммерческая ассоциация с офисом, зарегистрированным в Бельгии. <br> <br>
 								Основными целями Альянса являются создание гибких и прозрачных механизмов для обмена информацией, содействия взаимному сотрудничеству через обмен опытом, ведение совместной исследовательской деятельности, содействие развитию финансовой грамотности, выработки рекомендаций по определению наиболее эффективных методов работы и донесению информации о важности международных финансовых центров для национальных экономик и социального развития.</div>
 								<a href="" class="about__link alliance__link">
 									<img src="./assets/images/globe.svg" alt="">
-									страница проекта
+									сайт альянса
 								</a>
 							</div>
 						</div>
@@ -92,7 +119,7 @@
 								
 								<a href="" class="about__link alliance__link">
 									<img src="./assets/images/globe.svg" alt="">
-									страница проекта
+									скачать доклад
 								</a>
 							</div>
 						</div>
@@ -154,4 +181,6 @@
 		</div>
 	</footer>
 </body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
 </html>

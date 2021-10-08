@@ -10,6 +10,7 @@
 	<title>Document</title>
 </head>
 <body>
+	<img src="./assets/images/about.png" alt="" class="background">
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -19,18 +20,29 @@
 				<nav class="header__nav">
 					<a href="" class="header__link">О ФОРУМЕ</a>
 					<div class="header__list">
-						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВА ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
+						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
 						<div class="header__box">
 							<a href="" class="header__list-link">
 								<img src="./assets/images/arrow.svg" alt="">
-								Оптимизация регуляторнойнагрузки</a>
+								Оптимизация регуляторной нагрузки</a>
 							<a href="" class="header__list-link">
 								<img src="./assets/images/arrow.svg" alt="">
 								Развитие финансового рынка</a>
 						</div>
 					</div>
 					<a href="" class="header__link">АНАЛИТИКА ESG</a>
-					<a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					<!-- <a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a> -->
+					<div class="header__list">
+						<a href="" class="header__list-main">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+						<div class="header__box">
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								РОССИЙСКО-БРИТАНСКАЯ РАБОЧАЯ ГРУППА</a>
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								WAIFC</a>
+						</div>
+					</div>
 				</nav>
 				<div class="header__search">
 					<img src="./assets/images/search.svg" alt="">
@@ -47,10 +59,31 @@
 					</div>
 					<div class="burger__nav">
 						<a href="" class="burger__link">О ФОРУМЕ</a>
-						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+						<a href="" class="burger__link menu-sec">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
 							СООБЩЕСТВА</a>
 						<a href="" class="burger__link">АНАЛИТИКА ESG</a>
 						<a href="" class="burger__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					</div>
+				</div>
+				<div class="burger-submenu">
+					<div class="burger__back"></div>
+					<div class="burger__search burger__search--mt">
+						<div class="burger__box">
+							<input type="text" class="burger__input" placeholder="Что ищем?">
+							<button class="burger__find">
+								<img src="./assets/images/find.svg" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="burger__nav">
+						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+							СООБЩЕСТВА</a>
+						<a href="" class="burger__link burger__link--sm">
+							<span></span>
+							Оптимизация регуляторной нагрузки</a>
+						<a href="" class="burger__link burger__link--sm">
+							<span></span>
+							Развитие финансового рынка</a>
 					</div>
 				</div>
 			</div>
@@ -85,7 +118,7 @@
 							АЦ ФОРУМ В YOUTUBE
 						</a>
 					</div>
-					<img src="./assets/images/logo-2.png" alt="" class="aside__logo">
+					<a href=""><img src="./assets/images/logo-2.png" alt="" class="aside__logo"></a>
 					<div class="aside__title">
 						САЙТ, ПОСВЯЩЕННЫЙ РАЗВИТИЮ МФЦ В РОССИЙСКОЙ ФЕДЕРАЦИИ
 					</div>
@@ -131,17 +164,19 @@
 								Согласно последнему отчету Банка России в рамках процесса сбора, обработки и реализации инициатив участников финансового рынка в 2020 году были рассмотрены и проанализированы 106 инициатив от 30 представителей финансового рынка, полученных через некоммерческий фонд «Аналитический центр «Форум»». По итогам рассмотрения и анализа было одобрено 11 новых инициатив1 для включения в общий портфель. Информация о поступивших инициативах размещена на сайте Банка России. Также за 2020 год было реализовано 12 инициатив участников финансового рынка. <span>Отчет по каждой реализованной Инициативе</span> включает следующие разделы финансового рынка: страховой рынок (2), инвестиционные фонды (2), товарный рынок (1), корпоративное управление (3), общие вопросы банковского законодательства (2), кредитование (1), финтех и информационная безопасность (1).
 							</div>
 							<div class="finance__docs">
-								<img src="./assets/images/arrow.svg" alt="" class="finance__docs-arrow">
+								<!-- <img src="./assets/images/arrow.svg" alt="" class="finance__docs-arrow"> -->
+								<div class="finance__docs-arrow"></div>
 								<div class="finance__docs-name">Актуальный пакет инициатив</div>
-								<a href="" class="finance__link">
-									<img src="./assets/images/xls.svg" alt="">
+								<a href="" class="finance__link finance__link--xls">
+									
 								</a>
 							</div>
 							<div class="finance__docs">
-								<img src="./assets/images/arrow.svg" alt="" class="finance__docs-arrow">
+								<!-- <img src="./assets/images/arrow.svg" alt="" class="finance__docs-arrow"> -->
+								<div class="finance__docs-arrow"></div>
 								<div class="finance__docs-name">Актуальный пакет инициатив</div>
-								<a href="" class="finance__link">
-									<img src="./assets/images/pdf.svg" alt="">
+								<a href="" class="finance__link ">
+									
 								</a>
 							</div>
 						</div>
@@ -160,10 +195,11 @@
 			</div>
 		</div>
 	</main>
-	<div class="up" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});">
-		<img src="./assets/images/upload.svg" alt="">
-	</div>
+	
 	<footer class="footer">
+		<div class="up" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});">
+			<img src="./assets/images/upload.svg" alt="">
+		</div>
 		<div class="container">
 			<div class="footer__inner">
 				<div class="footer__terms">

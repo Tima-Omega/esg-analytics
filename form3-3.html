@@ -5,11 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/normalize.css">
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/style.css">
 	<title>Document</title>
 </head>
 <body>
+	<img src="./assets/images/about.png" alt="" class="background">
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -19,18 +20,29 @@
 				<nav class="header__nav">
 					<a href="" class="header__link">О ФОРУМЕ</a>
 					<div class="header__list">
-						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВА ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
+						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
 						<div class="header__box">
 							<a href="" class="header__list-link">
 								<img src="./assets/images/arrow.svg" alt="">
-								Оптимизация регуляторнойнагрузки</a>
+								Оптимизация регуляторной нагрузки</a>
 							<a href="" class="header__list-link">
 								<img src="./assets/images/arrow.svg" alt="">
 								Развитие финансового рынка</a>
 						</div>
 					</div>
 					<a href="" class="header__link">АНАЛИТИКА ESG</a>
-					<a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					<!-- <a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a> -->
+					<div class="header__list">
+						<a href="" class="header__list-main">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+						<div class="header__box">
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								РОССИЙСКО-БРИТАНСКАЯ РАБОЧАЯ ГРУППА</a>
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								WAIFC</a>
+						</div>
+					</div>
 				</nav>
 				<div class="header__search">
 					<img src="./assets/images/search.svg" alt="">
@@ -47,10 +59,31 @@
 					</div>
 					<div class="burger__nav">
 						<a href="" class="burger__link">О ФОРУМЕ</a>
-						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+						<a href="" class="burger__link menu-sec">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
 							СООБЩЕСТВА</a>
 						<a href="" class="burger__link">АНАЛИТИКА ESG</a>
 						<a href="" class="burger__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					</div>
+				</div>
+				<div class="burger-submenu">
+					<div class="burger__back"></div>
+					<div class="burger__search burger__search--mt">
+						<div class="burger__box">
+							<input type="text" class="burger__input" placeholder="Что ищем?">
+							<button class="burger__find">
+								<img src="./assets/images/find.svg" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="burger__nav">
+						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+							СООБЩЕСТВА</a>
+						<a href="" class="burger__link burger__link--sm">
+							<span></span>
+							Оптимизация регуляторной нагрузки</a>
+						<a href="" class="burger__link burger__link--sm">
+							<span></span>
+							Развитие финансового рынка</a>
 					</div>
 				</div>
 			</div>
@@ -85,7 +118,7 @@
 							АЦ ФОРУМ В YOUTUBE
 						</a>
 					</div>
-					<img src="./assets/images/logo-2.png" alt="" class="aside__logo">
+					<a href=""><img src="./assets/images/logo-2.png" alt="" class="aside__logo"></a>
 					<div class="aside__title aside__title--color">
 						САЙТ, ПОСВЯЩЕННЫЙ РАЗВИТИЮ МФЦ В РОССИЙСКОЙ ФЕДЕРАЦИИ
 					</div>

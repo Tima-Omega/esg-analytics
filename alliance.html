@@ -5,11 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/normalize.css">
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/style.css">
 	<title>Document</title>
 </head>
 <body>
+	<img src="./assets/images/about.png" alt="" class="background">
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -19,18 +20,29 @@
 				<nav class="header__nav">
 					<a href="" class="header__link">О ФОРУМЕ</a>
 					<div class="header__list">
-						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВА ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
+						<a href="" class="header__list-main">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО СООБЩЕСТВА</a>
 						<div class="header__box">
 							<a href="" class="header__list-link">
 								<img src="./assets/images/arrow.svg" alt="">
-								Оптимизация регуляторнойнагрузки</a>
+								Оптимизация регуляторной нагрузки</a>
 							<a href="" class="header__list-link">
 								<img src="./assets/images/arrow.svg" alt="">
 								Развитие финансового рынка</a>
 						</div>
 					</div>
 					<a href="" class="header__link">АНАЛИТИКА ESG</a>
-					<a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					<!-- <a href="" class="header__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a> -->
+					<div class="header__list">
+						<a href="" class="header__list-main">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+						<div class="header__box">
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								РОССИЙСКО-БРИТАНСКАЯ РАБОЧАЯ ГРУППА</a>
+							<a href="" class="header__list-link">
+								<img src="./assets/images/arrow.svg" alt="">
+								WAIFC</a>
+						</div>
+					</div>
 				</nav>
 				<div class="header__search">
 					<img src="./assets/images/search.svg" alt="">
@@ -47,10 +59,31 @@
 					</div>
 					<div class="burger__nav">
 						<a href="" class="burger__link">О ФОРУМЕ</a>
-						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+						<a href="" class="burger__link menu-sec">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
 							СООБЩЕСТВА</a>
 						<a href="" class="burger__link">АНАЛИТИКА ESG</a>
 						<a href="" class="burger__link">МЕЖДУНАРОДНОЕ <br> СОТРУДНИЧЕСТВО</a>
+					</div>
+				</div>
+				<div class="burger-submenu">
+					<div class="burger__back"></div>
+					<div class="burger__search burger__search--mt">
+						<div class="burger__box">
+							<input type="text" class="burger__input" placeholder="Что ищем?">
+							<button class="burger__find">
+								<img src="./assets/images/find.svg" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="burger__nav">
+						<a href="" class="burger__link">РАБОТА С ИНИЦИАТИВАМИ ПРОФЕССИОНАЛЬНОГО
+							СООБЩЕСТВА</a>
+						<a href="" class="burger__link burger__link--sm">
+							<span></span>
+							Оптимизация регуляторной нагрузки</a>
+						<a href="" class="burger__link burger__link--sm">
+							<span></span>
+							Развитие финансового рынка</a>
 					</div>
 				</div>
 			</div>
@@ -85,7 +118,7 @@
 							АЦ ФОРУМ В YOUTUBE
 						</a>
 					</div>
-					<img src="./assets/images/logo-2.png" alt="" class="aside__logo">
+					<a href=""><img src="./assets/images/logo-2.png" alt="" class="aside__logo"></a>
 					<div class="aside__title">
 						САЙТ, ПОСВЯЩЕННЫЙ РАЗВИТИЮ МФЦ В РОССИЙСКОЙ ФЕДЕРАЦИИ
 					</div>
@@ -99,10 +132,11 @@
 							<div class="alliance__item-title">Аналитический центр «Форум» — один из инициаторов создания международной неправительст&shy;венной организации «Всемирный альянс международных финансовых центров» (World Alliance of International Financial Centers, WAIFC).</div>
 							<div class="alliance__cont">
 								<div class="alliance__text"><span>В декабре 2016 года</span> представители Москвы, Парижа и Франкфурта-на-Майне подписали в Москве Декларацию о намерении создать WAIFC. <br> <br>
-								<span>В июле 2018</span> года представители 11 финансовых центров подписали в Париже Декларацию о создании Альянса, и <span>в октябре 2018 года</span> Альянс был учрежден как международная некоммерческая ассоциация с офисом, зарегистрированным в Бельгии. <br> <br>
+								<span>В июле 2018 года</span>  представители 11 финансовых центров подписали в Париже Декларацию о создании Альянса, и <span>в октябре 2018 года</span> Альянс был учрежден как международная некоммерческая ассоциация с офисом, зарегистрированным в Бельгии. <br> <br>
 								Основными целями Альянса являются создание гибких и прозрачных механизмов для обмена информацией, содействия взаимному сотрудничеству через обмен опытом, ведение совместной исследовательской деятельности, содействие развитию финансовой грамотности, выработки рекомендаций по определению наиболее эффективных методов работы и донесению информации о важности международных финансовых центров для национальных экономик и социального развития.</div>
 								<a href="" class="about__link alliance__link">
-									<img src="./assets/images/globe.svg" alt="">
+									<!-- <img src="./assets/images/globe.svg" alt=""> -->
+									<span></span>
 									сайт альянса
 								</a>
 							</div>
@@ -118,7 +152,7 @@
 								Йохен Бидерманн, Управляющий директор WAIFC, прокомментировал публикацию доклада: «Как только в начале 2020 года мир охватила пандемия COVID-19, мы осознали степень ущерба для малого и среднего бизнеса. МСП являются опорой наших экономик. Пандемия нанесла удар по многим отраслям, но МСП пострадали более всего, поскольку, в отличие крупных компаний, их специализация ограничена. Крайне важно оказать им помощь в преодолении кризиса и безболезненном переходе к устойчивому восстановлению».</div>
 								
 								<a href="" class="about__link alliance__link">
-									<img src="./assets/images/globe.svg" alt="">
+									<span></span>
 									скачать доклад
 								</a>
 							</div>
@@ -127,7 +161,7 @@
 							<div class="about__subtitle alliance__subtitle alliance__subtitle--sec">JOINT DECLARATION</div>
 							<div class="alliance__item-title alliance__item-title--sec">Brussels, 27.05.2020 — The world’s leading financial centers stand together and will do their part to mitigate the current crisis and to prepare for an economic recovery. International financial centers will play a vital role in getting the world’s economy back on its feet as well as in serving the real economy and society as a whole in the post-crisis.</div>
 							<div class="alliance__cont">
-								<div class="alliance__text alliance__text--sec">The global economic shutdowns necessitated by the pandemic have required unprecedented interventions, and our industry has been vital in supporting these actions. As soon as the Coronavirus is defeated, we need to restart the global economy as part of the recovery process. <br> <br>
+								<div class="alliance__text alliance__text--sec alliance__text--line">The global economic shutdowns necessitated by the pandemic have required unprecedented interventions, and our industry has been vital in supporting these actions. As soon as the Coronavirus is defeated, we need to restart the global economy as part of the recovery process. <br> <br>
 								In the short term, resilience is critical. We need to protect and serve the most vulnerable parts of our economies: <br> <br>
 								Entrepreneurs and start-ups are key sources of innovation. We need to support them in challenging times with emergency funds. SMEs are the backbone of our economies. They represent a large part of global employment, and we need to support them. They need access to both public and private funding. The working population in general. Many people have lost their jobs due to the current crisis, and others are employed only part-time with lower wages. The financial industry needs to support them for keeping our societies together. <br> <br>
 								In the medium term, countries need to scale up investments and continue to develop digital infrastructures. During the phases of lockdowns, we have experienced the importance of digital services in finance and beyond. <br> <br>
@@ -136,13 +170,13 @@
 								Governments and regulators need to continue to coordinate their response to the pandemic. Firms will need the space and regulatory assistance to focus on meeting the challenges ahead. Countries must avoid the self-defeating lure of protectionism and work together to open trade and investment constructively and sustainably for our economies. <br> <br>
 								And in the long run, it is essential that we reconsider our economic models and give a new priority to long-term perspectives, innovative business models, sustainable economies, and environmental and social considerations.</div>
 							</div>
-							<div class="alliance__item-title alliance__item-title--sec">Arnaud de Bresson, Chairman of the WAIFC Board of Directors <br> and CEO of Paris Europlace:</div>
+							<div class="alliance__item-title alliance__item-title--sec alliance__item-title--mb">Arnaud de Bresson, Chairman of the WAIFC Board of Directors <br> and CEO of Paris Europlace:</div>
 							<div class="alliance__cont">
-								<div class="alliance__text alliance__text--sec">
+								<div class="alliance__text alliance__text--sec ">
 									«This crisis will change the business model for the coming years. New priorities are to accelerate solidarity, as well as the development of innovation. The financial industry is part of the solution to accompany the financing of corporates, as well as to develop sustainable finance and the development of new technologies. With WAIFC, International financial centers are accelerating their cooperation to fix new objectives and share their best practices.»
 								</div>
 							</div>
-							<div class="alliance__item-title alliance__item-title--sec">Miles Celic, Member of the WAIFC Board of Directors <br> and CEO of TheCityUK:</div>
+							<div class="alliance__item-title alliance__item-title--sec alliance__item-title--mb">Miles Celic, Member of the WAIFC Board of Directors <br> and CEO of TheCityUK:</div>
 							<div class="alliance__cont">
 								<div class="alliance__text alliance__text--sec">
 									«COVID-19 is a global health emergency but also a global economic emergency. Unprecedented international challenges need international coordination so that we can maximize the effectiveness of steps that individual jurisdictions are taking. International financial centers have been at the heart of meeting the immediate economic consequences. We will also be central to the recovery. Governments must work ever more closely with each other and with industry to help make this possible.»
@@ -154,10 +188,11 @@
 			</div>
 		</div>
 	</main>
-	<div class="up" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});">
-		<img src="./assets/images/upload.svg" alt="">
-	</div>
+	
 	<footer class="footer">
+		<div class="up" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});">
+			<img src="./assets/images/upload.svg" alt="">
+		</div>
 		<div class="container">
 			<div class="footer__inner">
 				<div class="footer__terms">
